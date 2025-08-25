@@ -1,37 +1,23 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Button from './Button'
-import { GoBell, GoCloudDownload, GoDatabase} from 'react-icons/go';
+
+import Sidebar from './components/Sidebar'
+import Route from './components/Route';
+import AccordionPage from './pages/AccordionPage';
+import DropdownPage from './pages/DropdownPage';
+import ButtonPage from './pages/ButtonPage';
 
 function App() {
- 
-  const handleClick = () => {
-    console.log('Click!');
-  };
-
+    
   return (
     <>
-      <div>
-
-        <div>
-          <Button secondary outline rounded onClick={handleClick}><GoBell />Click me!</Button>
-        </div>
-        <div>
-          <Button danger outline><GoCloudDownload />Buy Now!</Button>
-        </div>
-        <div>
-          <Button warning><GoDatabase />See Deal!</Button>
-        </div>
-        <div>
-          <Button secondary>Hide Ads!</Button>
-        </div>
-        <div>
-          <Button primary rounded>Something!</Button>
-        </div>
-
+    <div className='container mx-auto grid grid-cols-6 gap-4 mt-4'>
+      <Sidebar />
+      <div className='col-span-5'>
+        <Route path="/accordion"><AccordionPage /></Route>
+        <Route path="/"><DropdownPage /></Route>
+        <Route path="/buttons"><ButtonPage /></Route>
       </div>
+    </div>
+     
     </>
   )
 }
