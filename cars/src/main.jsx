@@ -4,6 +4,8 @@ import './index.css'
 import App from './App.jsx'
 import { Provider } from 'react-redux'
 import { store } from './store/index.jsx'
+import 'bulma/css/bulma.css'
+import './styles.css'
 
 
 
