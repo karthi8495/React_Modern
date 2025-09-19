@@ -6,7 +6,7 @@ const fetchUsers = createAsyncThunk('users/fetch', async () => {
    
 
     // DEV ONLY!!!
-   await pause(10000);
+   await pause(1000);
 
    return response.data;
 });
