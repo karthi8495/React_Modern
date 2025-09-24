@@ -1,18 +1,60 @@
 {
   "users": [
     {
-      "id": "14fa",
-      "name": "Leticia Kling"
+      "id": "95b3",
+      "name": "Elijah Ritchie"
     },
     {
-      "id": "c2b5",
-      "name": "Erin Ledner-Sporer"
+      "id": "4990",
+      "name": "Kelvin Osinski"
     },
     {
-      "id": "d364",
-      "name": "Priscilla Kuphal"
+      "id": "aa4d",
+      "name": "Kari Hane"
     }
   ],
-  "albums": [],
-  "photos": []
+  "albums": [
+    {
+      "id": "dfa1",
+      "userId": "95b3",
+      "title": "Gorgeous Bronze Bike"
+    },
+    {
+      "id": "ec33",
+      "userId": "4990",
+      "title": "Incredible Aluminum Chair"
+    },
+    {
+      "id": "3a87",
+      "userId": "aa4d",
+      "title": "Fresh Gold Bacon"
+    },
+    {
+      "id": "46db",
+      "userId": "4990",
+      "title": "Generic Concrete Pants"
+    }
+  ],
+  "photos": [
+    {
+      "id": "553b",
+      "albumId": "46db",
+      "url": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/9.jpg"
+    },
+    {
+      "id": "9a56",
+      "albumId": "dfa1",
+      "url": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/female/512/89.jpg"
+    },
+    {
+      "id": "677f",
+      "albumId": "dfa1",
+      "url": "https://cdn.jsdelivr.net/gh/faker-js/assets-person-portrait/male/512/25.jpg"
+    },
+    {
+      "id": "cc51",
+      "albumId": "dfa1",
+      "url": "https://avatars.githubusercontent.com/u/29702922"
+    }
+  ]
 }
